@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "mont";
+    src: url(Mont-HeavyDEMO.otf);
+}
+@font-face {
+    font-family: "mont-light";
+    src: url(Mont-ExtraLightDEMO.otf);
+}
+
+.cabecalho
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.t-login
+{
+    margin-bottom: 5%;
+    color: #e60a13 ;
+}
+
+.img-logo
+{
+    width: 200px;
+    user-select: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../img/fundo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "mont";
+    color: white;
+}
+
+.login
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000080;
+    width: 500px;
+    height: 500px;
+}
+
+.i-login
+{
+    font-size: 1rem;
+    margin-top: 5%;
+    padding: 15px;
+    width: 70%;
+    border: 1px solid black;
+}
+
+#btn-submit
+{
+    background-color: #e60a13;
+    /* margin-top: 10%; */
+    font-family: "mont";
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn-submit:hover
+{
+    background-color: #ae0a10;
+}
+
+.area-links
+{
+    margin-top: 3%;
+    display: flex;
+    gap: 20px;
+}
+
+.links-login
+{
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+
+}
+
+.links-login:hover
+{
+    border-bottom: 2px solid aliceblue;
+}
+
+/* e60a13 */
+
+@media screen and (max-width: 512px)
+{
+    .img-logo
+    {
+        width: 110px;
+        user-select: none;
+    }
+
+    .login
+    {
+        width: 85%;
+    }    
+
+    .t-login
+    {
+        font-size: 1.2rem;
+    }
+
+    .links-login
+    {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .t-login
+    {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,178 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body
+{
+    overflow-y: hidden;
+    background-image: url(../img/fundo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000200;
+}
+
+.cabecalho
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #e60a13 ;;
+}
+
+.img-logo
+{
+    width: 200px;
+    user-select: none;
+}
+
+.btn-sair
+{
+    border: 1px solid #e60a13;
+    background-color: #e60a13;
+    padding: 10px 30px;
+    transition: 1.0s;
+    color: #000200;
+}
+
+.btn-sair:hover
+{
+    box-shadow: 0px 0px 10px 5px #e60a13;
+}
+
+.conteudo
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.barra-lateral
+{
+    border-top: 3px solid #000200;
+}
+
+.monster
+{
+    width: 25vw;
+    cursor:pointer;
+    background-color: transparent;
+    color: #000200;
+    padding: 10px 0px;
+}
+
+#monstersDiv
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 75vh;
+    width: 25vw;
+    text-align: center;
+}
+
+#monsters h2
+{   
+    padding: 10px 0px;
+    text-align: center;
+    width: 25vw;
+    border-bottom: 3px solid black;
+    background-color: aliceblue;
+   
+}
+
+#monstersDiv::-webkit-scrollbar {
+    width: 10px;    
+  }
+  
+#monstersDiv::-webkit-scrollbar-track {
+    background: aliceblue;
+  }
+  
+#monstersDiv::-webkit-scrollbar-thumb {
+    background: #474747;
+    cursor: pointer;
+  }
+
+aside{
+    height: 83vh;
+    width: 25vw;
+    background-color: #e60a13;
+}
+section{
+    height: 85vh;
+    width: 75vw;
+    color:aliceblue;
+    overflow-y: auto;
+}
+
+#div-nome
+{
+    padding: 10px;
+   text-align: center;
+   border-bottom: 1px solid aliceblue;
+}
+
+#div-attr
+{
+    border: 1px solid aliceblue;
+    width: fit-content;
+    padding: 10px;
+}
+
+#div-line2, #div-line3 
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid aliceblue;
+}
+
+#div-line4
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+#senses
+{
+    width: 150px;
+    margin-left: 25%;
+}
+
+.respostas img
+{
+    width: 150px;
+    height: 1/1;
+}
+.respostas:hover img:hover
+{
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
+.respostas
+{
+    background-color: #00000080;
+}
+
+#btn-sem-login
+{
+    position: relative;
+    top: 50px;
+    color: black;
+    background-color: aliceblue;
+    /* border-radius: 25px; */
+    padding: 20px;
+    border: 2px solid black;
+}
